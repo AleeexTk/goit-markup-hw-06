@@ -76,9 +76,9 @@ li {
   margin: 0;
 }
 
-.header.link {
-  color: var(--title-text-color);
 
+  .header.link {
+    color: var(--title-text-color);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -744,18 +744,18 @@ p {
 
 /* header-line */
 
-.header-line {
+.header.link.header-line {
   position: relative;
   display: block;
   color: var(--accent-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 100;
+  
 }
 
 .header-line::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 4px;
