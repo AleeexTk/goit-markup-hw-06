@@ -112,6 +112,9 @@ li {
   color: var(--primary-text-color);
   text-decoration-line: none;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress.link:focus,
@@ -151,14 +154,15 @@ li {
   padding: 16px 32px;
   gap: 10px;
   cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--accent-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 /* Our privilegies */
@@ -603,13 +607,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .social-icon {
@@ -657,13 +662,14 @@ p {
   justify-content: center;
   align-items: center;
   color: #8e8f99;
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover {
   border-color: var(--accent-color);
   color: var(--accent-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .clients-link:focus {
   border-color: var(--accent-color);
@@ -707,14 +713,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
@@ -744,18 +750,23 @@ p {
 .header-line {
   position: relative;
   display: block;
+  color: var(--accent-color);
 }
+
 
 .header-line::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
-  background-color: var(--primary-bg-color);
-  bottom: 0;
+  height: 4px;
+  background-color:  var(--accent-color);
+  bottom: -1px;
   left: 0;
   border-radius: 2px;
   border-bottom: 1px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header.link {
@@ -981,16 +992,33 @@ font-family: 'Roboto';
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 }
-.contact-form-message::placeholder {font-family: 'Roboto';
+.contact-form-message::placeholder {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);}
-  
-.contact-form-message:focus {border-color: #4d5ae5;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-message:focus {
+  border-color: #4d5ae5;
   outline: none;
   transition-property: border-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* checkbox */
+.contact-accept-checkbox-desc::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.contact-accept-checkbox:checked + .contact-accept-checkbox-desc::before {background-color: tomato;}
+
