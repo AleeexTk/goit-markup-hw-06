@@ -660,7 +660,7 @@ p {
   justify-content: center;
   align-items: center;
   color: #8e8f99;
-  transition-property: color, border-color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
