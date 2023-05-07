@@ -86,15 +86,15 @@ li {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-property: color, text-decoration-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header.link:hover,
 .header.link:focus {
   color: var(--accent-color);
   text-decoration-color: var(--accent-color);
-  transition-property: color, text-decoration-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Header-ADRESS */
@@ -162,7 +162,6 @@ li {
 .button.primary:hover,
 .button.primary:focus {
   background-color: var(--accent-color);
-  
 }
 
 /* Our privilegies */
@@ -614,7 +613,6 @@ p {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  
 }
 
 .social-icon {
@@ -669,7 +667,6 @@ p {
 .clients-link:hover {
   border-color: var(--accent-color);
   color: var(--accent-color);
-  
 }
 .clients-link:focus {
   border-color: var(--accent-color);
@@ -751,22 +748,23 @@ p {
   position: relative;
   display: block;
   color: var(--accent-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
 }
-
 
 .header-line::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 4px;
-  background-color:  var(--accent-color);
+  background-color: var(--accent-color);
   bottom: -1px;
   left: 0;
   border-radius: 2px;
   border-bottom: 1px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .header.link {
@@ -1012,7 +1010,7 @@ font-family: 'Roboto';
 
 /* checkbox */
 .contact-accept-checkbox-desc::before {
-  content: '';
+  content: "";
   display: block;
   width: 16px;
   height: 16px;
@@ -1020,5 +1018,6 @@ font-family: 'Roboto';
   border-radius: 2px;
   cursor: pointer;
 }
-.contact-accept-checkbox:checked + .contact-accept-checkbox-desc::before {background-color: tomato;}
-
+.contact-accept-checkbox:checked + .contact-accept-checkbox-desc::before {
+  background-color: tomato;
+}
