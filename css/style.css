@@ -661,13 +661,7 @@ p {
   color: #8e8f99;
   border-radius: 4px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--anim-transition), color var(--anim-transition);
 }
 
 .clients-link:hover {
@@ -811,9 +805,8 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 72px 24px 24px 24px;
   border-radius: 4px;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform var(--anim-transition);
+  
 }
 
 .modal-close-btn {
