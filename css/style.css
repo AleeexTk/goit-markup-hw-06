@@ -848,9 +848,10 @@ p {
 .project-thumb {
   position: relative;
   overflow: hidden;
+  
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -859,13 +860,15 @@ p {
   background-color: var(--primary-bg-color);
   padding: 20px;
   transform: translateY(100%);
-}
+} */
 .card-item:focus .project-action-content {
   transform: translateY(0%);
 }
 .card-item:hover .project-action-content {
   transform: translateY(0%);
 }
+
+
 
 .project-action-content {
   color: var(--background-color);
