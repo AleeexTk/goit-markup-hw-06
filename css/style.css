@@ -76,9 +76,8 @@ li {
   margin: 0;
 }
 
-
-  .header.link {
-    color: var(--title-text-color);
+.header.link {
+  color: var(--title-text-color);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -323,7 +322,6 @@ li {
 .button.secondary:focus {
   color: var(--secondry-white-color);
   background-color: var(--accent-color);
-  
 }
 /* Projects  */
 
@@ -740,7 +738,6 @@ p {
 .project-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  
 }
 
 /* ANIMATION */ /* ANIMATION */ /* ANIMATION */
@@ -754,11 +751,10 @@ p {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .header-line::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 4px;
@@ -767,7 +763,6 @@ p {
   left: 0;
   border-radius: 2px;
   border-bottom: 1px;
-  
 }
 
 .header.link {
@@ -831,9 +826,11 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-icon {transition-property: fill;
+.modal-close-icon {
+  transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-close-btn:focus,
 .modal-close-btn:hover {
@@ -851,7 +848,6 @@ p {
 .project-thumb {
   position: relative;
   overflow: hidden;
-  
 }
 
 .overlay {
@@ -863,15 +859,13 @@ p {
   background-color: var(--primary-bg-color);
   padding: 20px;
   transform: translateY(100%);
-
 }
-.card-item:focus .project-action-content,
+.card-item:focus .project-action-content {
+  transform: translateY(0%);
+}
 .card-item:hover .project-action-content {
   transform: translateY(0%);
-  
 }
-
-
 
 .project-action-content {
   color: var(--background-color);
@@ -889,8 +883,10 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-action-content :hover, 
-.project-action-content:focus {transform: translateY(100%);}
+.project-action-content:hover,
+.project-action-content:focus {
+  transform: translateY(100%);
+}
 
 /* FORM ELEMENTS */ /* FORM ELEMENTS */ /* FORM ELEMENTS */
 
