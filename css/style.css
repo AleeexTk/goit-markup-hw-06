@@ -496,6 +496,7 @@ p {
 
 .footer-text {
   max-width: 264px;
+  margin-top: 16px;
 }
 
 /* Project's FILTER LIST */
