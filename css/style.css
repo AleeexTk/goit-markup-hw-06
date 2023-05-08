@@ -867,9 +867,7 @@ p {
 .card-item:focus .overlay,
 .card-item:hover .overlay {
   transform: translateY(0%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .project-action-content {
@@ -881,7 +879,21 @@ p {
 
 .project-action-content {
   color: var(--secondry-white-color);
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  background-color: var(--primary-bg-color);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.project-action-content :hover, .project-action-content:focus {transform: translateY(100%);}
 
 /* FORM ELEMENTS */ /* FORM ELEMENTS */ /* FORM ELEMENTS */
 
