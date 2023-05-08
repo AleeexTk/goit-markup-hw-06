@@ -827,7 +827,6 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .modal-close-btn:focus,
 .modal-close-btn:hover {
   fill: var(--secondry-white-color);
@@ -911,7 +910,7 @@ p {
   letter-spacing: 0.01em;
   color: #8e8f99;
 }
-.user-policy-text {
+.contact-accept-checkbox-desc {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1032,7 +1031,52 @@ font-family: 'Roboto';
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   cursor: pointer;
+  margin-right: 8px;
 }
 .contact-accept-checkbox:checked + .contact-accept-checkbox-desc::before {
-  background-color: tomato;
+  background-color: var(--accent-color);
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto;
+}
+
+.contact-accept-checkbox:focus + .contact-accept-checkbox-desc::before {
+  outline: 1px solid var(--accent-color);
+}
+
+.contact-accept-checkbox-desc {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.contact-form-btn {
+  min-width: 169px;
+  padding: 16px 32px;
+  align-self: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--secondry-white-color);
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid var(--primary-bg-color);
 }
