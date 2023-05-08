@@ -314,8 +314,8 @@ li {
   letter-spacing: 0.04em;
   background-color: #f4f4fd;
   cursor: pointer;
-  transition-property: color, background-color;
-  transition-duration: 2500ms;
+  transition-property: color, border-color, background-color; box-shadow;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -862,6 +862,7 @@ p {
   padding: 20px;
   transform: translateY(100%);
 }
+.card-item:focus .overlay,
 .card-item:hover .overlay {
   transform: translateY(0%);
   transition-property: transform;
