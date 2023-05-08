@@ -851,6 +851,7 @@ p {
 .project-thumb {
   position: relative;
   overflow: hidden;
+  
 }
 
 .overlay {
@@ -864,21 +865,16 @@ p {
   transform: translateY(100%);
 
 }
-.card-item:focus .overlay,
-.card-item:hover .overlay {
+.card-item:focus .project-action-content,
+.card-item:hover .project-action-content {
   transform: translateY(0%);
   
 }
 
-.project-action-content {
-  width: 296px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-}
+
 
 .project-action-content {
-  color: var(--secondry-white-color);
+  color: var(--background-color);
   position: absolute;
   top: 0;
   font-size: 16px;
@@ -893,7 +889,8 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-action-content :hover, .project-action-content:focus {transform: translateY(100%);}
+.project-action-content :hover, 
+.project-action-content:focus {transform: translateY(100%);}
 
 /* FORM ELEMENTS */ /* FORM ELEMENTS */ /* FORM ELEMENTS */
 
